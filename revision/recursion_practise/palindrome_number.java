@@ -4,22 +4,17 @@ public class palindrome_number {
     }
 
     public static void pali(int n, int original){
-        int ans = 0;
-       
-        ans = ans*10 +(n/10);
-         pali(n/10, original);
-          if(n == 0){
-            if(ans == original){ 
-                System.out.println("true");
-            }
-            else {
-                System.out.println("false");
-            }
-            return ;
+        if(n == 0) return;
+        int ans = n%10;
+       ans+= ans*10;
+        pali(n/10, original);
+        if(ans == original){
+            System.out.println("true");
         }
+        else System.out.println("false");
+       
 
     }
 
     
 }
-58
