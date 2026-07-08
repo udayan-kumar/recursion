@@ -12,4 +12,3 @@ public class reverse_number {
     }
 
 }
-47:13
