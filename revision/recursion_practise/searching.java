@@ -29,4 +29,3 @@ public class searching {
           findallindex(arr, target, index+1);
     }
 }
-29:47

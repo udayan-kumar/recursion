@@ -6,7 +6,6 @@ public class binary_search {
 
     public static int binary(int[] arr, int target, int low , int high){
         int mid = (low + high)/2;
-
         if(low > high) return -1;
         if(arr[mid] == target) return mid;
         if(arr[mid] > target) return binary(arr, target, low, mid-1);
